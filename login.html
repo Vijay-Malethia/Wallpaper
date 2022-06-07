@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        .styling {
+            width: 100%;
+            padding: 22px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(230, 84, 84);
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: whitesmoke;
+            /* font-weight: 100px; */
+            font-size: 30px;
+            color: rgb(6, 173, 6);
+            overflow-x: hidden;
+           
+        }
+
+        body {
+            color: rgb(1, 170, 43);
+         
+            /* background-image: image1 (4); */
+            font-size: 40px;
+
+
+        }
+
+        #button {
+            width: 100px;
+            height: 40px;
+            background-color: lawngreen;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+
+        #type {
+            width: 90%;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        #button:hover {
+            background-color: rgb(73, 195, 93);
+
+            /* transition-duration: .5s; */
+        }
+
+        #type:hover {
+            background-color: rgb(192, 211, 223);
+        }
+    </style>
+</head>
+
+<body background="image1 (1).jpg">
+    <h2
+        style="text-align: center;background-color: rgb(221, 216, 207);border-radius: 6px;font-size: 40px;font-display: initial;">
+        login here</h2>
+
+    <div class="styling">
+        <form action="#">
+
+            Username <br>
+            <input id="type" type="text" placeholder="enter your name" required >
+            <br> <br> Email
+            <br><input id="type" type="email" placeholder="enter your email" required>
+            <br> <br>Password
+            <!-- s<label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select> -->
+            <br> <input id="type" type="password" placeholder="enter your password" maxlength="8" required>
+            <br><br> <br> <input id="button" type="reset" name="" id="#">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="button" type="submit" value="login" id="login" onsubmit="validation()">
+        </form>
+    </div>
+    <br>
+    <marquee behavior="#" direction="right" style="font-size: 30px;">www.login.com</marquee>
+    <p id="hii"></p>
+    <script>
+        function validation(){
+            let x= document.getElementById("type").value;
+            document.getElementById("hii").innerHTML=x;
+
+        }
+    </script>
+</body>
+
+</html>
